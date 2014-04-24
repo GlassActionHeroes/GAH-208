@@ -38,3 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'pusher'
+
+group :development, :test do
+  gem 'dotenv-rails'
+end
