@@ -7,4 +7,5 @@ RoR websocket authentication server with [Pusher](http://pusher.com/).
 `http://mysterious-forest-1989.herokuapp.com/hello_world`
 
 ######Authentication:
-`http://mysterious-forest-1989.herokuapp.com/pusher/auth
+
+post: `http://mysterious-forest-1989.herokuapp.com/pusher/auth`
