@@ -1,9 +1,9 @@
-###[GlassActionHeroes](https://github.com/GlassActionHeroes/ClashOfTheCoders)
+###[BNR 2048](http://glassactionheroes.github.io/)
 
 RoR websocket authentication server with [Pusher](http://pusher.com/).
 
 ## Goal
-* Enable multiplatform (Google Glass, Android, iOS, and web) game controllers for a single game playing session
+* Enable multiplatform (Google Glass, Android, iOS, and web) game controllers for a single game playing session at <http://glassactionheroes.github.io/>
 * Learn about websockets
 * Participate in ClashOfTheCoders2014
 
