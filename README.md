@@ -1,11 +1,29 @@
-###[GlassActionHeros](https://github.com/GlassActionHeroes/ClashOfTheCoders)
+###[GlassActionHeroes](https://github.com/GlassActionHeroes/ClashOfTheCoders)
 
 RoR websocket authentication server with [Pusher](http://pusher.com/).
 
-####Client Testing
-######Config:
-`http://mysterious-forest-1989.herokuapp.com/hello_world`
+## Goal
+* Enable multiplatform (Google Glass, Android, iOS, and web) game controllers for a single game playing session
+* Learn about websockets
+* Participate in ClashOfTheCoders2014
 
-######Authentication:
+### Authentication Server
 
-post: `http://mysterious-forest-1989.herokuapp.com/pusher/auth`
+For documentation on server endpoints, take a look at the root index view <http://mysterious-forest-1989.herokuapp.com>.
+
+### Pusher
+
+For your hacking pleasure, see Client repos in [GlassActionHeros](https://github.com/GlassActionHeroes) for config information.
+
+##Development
+
+### Requirements
+
+* Ruby 2.0.0p353
+* Rails 4.1.0
+
+## Environment Variables
+
+Required (in `.env`):
+
+see `.env.sample`
