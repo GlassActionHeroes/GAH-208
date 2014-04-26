@@ -1,11 +1,72 @@
 <div>
-<b>Client Auth request: </b></br>
-post:  /pusher/auth
+  <h1>BNR 2048</h1>
+  <p>
+    BNR 2048 is a multiplayer, live streaming game of 2048 available to GoogleGlass, Web, Android, and iOS platforms. Players have individual controllers, but shared access to a single board game in real time. Real time playing is enabled through websockets hosted by Pusher.
+  </p>
 </div>
 
-</br>
+<div>
+  <h2>Client Authorization Request for Private Channel Access</h2>
+  <p>
+    Clients are able to trigger events in private websocket channels. Server side security is highly recommended.
+  </p>
+  <p>
+    When instantiating a new Pusher object on the client side, declare the authEndpoint as the server url, <code>http://mysterious-forest-1989.herokuapp.com</code>, or <code>http://mysterious-forest-1989.herokuapp.com/pusher/auth</code> depending on platform. When the client binds to a private channel, a request will automatically be made to the Server, and the server will connect the Client to a secure Pusher channel.
+  </p>
+  <p>
+    Testing events through the Pusher Event Creator will not be received in private channels. Client to client testing is recommended.
+  </p>
+  <p>
+    Hopefully, your Client library will automate the process of connecting to the endpoints below, as well as handling callbacks. See examples in the repo for how each platform connects.
+  </p>
+
+  <div>
+    <h3>Android / iOS:</h3>
+    <p>
+      example request: </br>
+      <code>
+        post:  /pusher/auth
+      </code>
+    </p>
+
+    <p>
+      example response: </br>
+      <code>
+        {"auth":"278d425bdf160c739803:58df8b0c36d6982b82c3ecf6b4662e34fe8c25bba48f5369f135bf843651c3a4"}
+      </code>
+    </p>
+  </div>
+
+  <div>
+    <h3>JavaScript:</h3>
+    <p>
+      example request: </br>
+      <code>
+        get:  /pusher/auth
+      </code>
+    </p>
+
+    <p>
+      example response: </br>
+      <code>
+        nameOfCallback({"auth":"514e04bbf50ba9b0b0b6:d218c061e48c495de58d6dac655c767fe8ababc8983146d24e6ef3cac3bdff29"})
+      </code>
+    </p>
+</div>
 
 <div>
-<b>Test:</b></br>
-get: /hello_world
+  <h3>Public Channel Event Testing:</h3>
+    <p>
+      example request: </br>
+      <code>
+        get:  /hello_world
+      </code>
+    </p>
+
+    <p>
+      example response: </br>
+      <code>
+        'hello world'
+      </code>
+    </p>
 </div>
